@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  cursor: crosshair;
+}
+
+/* Glitch Text */
+#typing {
+  font-size: 60px;
+  text-shadow: 
+    0 0 10px red,
+    0 0 20px red,
+    0 0 40px purple;
+  animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-1px, 1px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+/* Panel Neon */
+#panel {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+button {
+  box-shadow: 0 0 15px red;
+}
+
+button:hover {
+  box-shadow: 0 0 30px red;
+}
